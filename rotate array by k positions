@@ -9,6 +9,7 @@ class Main {
            a[i]=sc.nextInt();
        }
        int k=sc.nextInt();
+       k=k%n;
        while(k>0)
        {
        int t=a[0];
