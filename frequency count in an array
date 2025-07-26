@@ -1,0 +1,31 @@
+import java.util.*;
+import java.util.stream.Stream;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        LinkedHashMap<Integer, Integer> mapv=new LinkedHashMap<>();
+        for(int num:arr)
+        {
+            if(mapv.containsKey(num))
+            {
+                int v=mapv.get(num);
+                mapv.put(num,v+1);
+            }
+            else
+            {
+                mapv.put(num,1);
+            }
+        }
+        for(Map.Entry<Integer,Integer> iv :mapv.entrySet())
+        {
+            System.out.println(iv.getKey()+" "+iv.getValue());
+        }
+        
+    }
+}
