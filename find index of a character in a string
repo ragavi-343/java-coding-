@@ -1,0 +1,10 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.next();
+        char c=sc.next().charAt(0);
+        int index=s1.indexOf(c);
+        System.out.print(index);
+    }
+}
