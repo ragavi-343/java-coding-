@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        boolean ispangram=true;
+        for(char ch='a';ch<='z';ch++)
+        {
+            if(s.indexOf(ch)==-1)
+            {
+                ispangram=false;
+                break;
+            }
+        }
+        if(ispangram)
+        {
+            System.out.print("pangram");
+        }
+        else
+        {
+            System.out.print("not a pangram");
+        }
+    }
+}
