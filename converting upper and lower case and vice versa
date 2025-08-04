@@ -1,0 +1,14 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String str=s.toUpperCase();
+        System.out.print(str);
+        
+        // converting to lowercase
+        String s2=sc.next();
+        String str2=s2.toLowerCase();
+        System.out.print(str2);
+    }
+}
