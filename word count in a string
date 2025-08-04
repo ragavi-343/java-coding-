@@ -1,0 +1,15 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String[] words=s.split(" ");
+        int c=0;
+        for(String word: words)
+        {
+            c++;
+        }
+        System.out.print(c);
+       
+    }
+}
