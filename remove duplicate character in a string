@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+
+Scanner sc=new Scanner(System.in);
+String s=sc.next();
+LinkedHashSet<Character> dup=new LinkedHashSet<>();
+char[] carr=s.toCharArray();
+for(char c:carr)
+{
+   dup.add(c);
+}
+    for(char c:dup)
+    {
+        System.out.println(c);
+    }
+}
+}
