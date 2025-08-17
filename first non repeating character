@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+String s=sc.next();
+char[] ch=s.toCharArray();
+HashMap<Character,Integer> dup=new HashMap<>();
+for(char c:ch)
+{
+   dup.put(c,dup.getOrDefault(c,0)+1);
+}
+for(char c:ch)
+{
+   if(dup.get(c)==1)
+   {
+       System.out.print(c);
+          break;
+   }
+}
+}
+}
