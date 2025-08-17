@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+List<String> arr=new ArrayList<>();
+arr.add("Raga");
+arr.add("mad");
+arr.add("vars");
+if(arr.stream().anyMatch(a->a.equalsIgnoreCase("Vars")))
+{
+   System.out.print("yes");
+}
+else{
+   System.out.print("no");
+}
+}
+}
